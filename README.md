@@ -1,6 +1,7 @@
 # InTechHub Dashboard
 
-![image](https://github.com/user-attachments/assets/57278276-d4f1-47ea-b521-e4fcee6d4870)
+![image](https://github.com/user-attachments/assets/aa42c6e0-430d-49fc-94ae-decd2abdef5d)
+
  A modern, responsive dashboard template built with HTML, CSS, and JavaScript, featuring data visualizations using various charting libraries. This project demonstrates dynamic content loading and effective management of JavaScript library dependencies.
 
 ## ✨ Features
