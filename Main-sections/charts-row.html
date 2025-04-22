@@ -1,0 +1,88 @@
+<section>
+    <div class="dashboard-section container-fluid px-4 mt-4">
+        <div class="row gx-4 gy-4 mt-4">
+
+          <!-- Total Target Achieved -->
+          <div class="col-md-4">
+            <div class="card shadow-sm p-4" style="height: 360px;">
+              <div class="d-flex justify-content-between align-items-center mb-3" style="padding-bottom: 30px;">
+                <h4 class="fw-bold mb-0 text-dark" >Total Target Achieved</h4>
+                <h6 class="text-muted">Day</h6>
+              </div>
+              <div class="text-center">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle-bg"
+                    d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831
+                       a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle"
+                    stroke-dasharray="67, 100"
+                    d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831
+                       a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <text x="18" y="20.35" class="percentage" style="font-weight: bolder">67%</text>
+                </svg>
+                <div class="d-flex justify-content-center gap-4 mt-3 small" style="padding-top: 20px;">
+                  <div style="padding-right: 50px; padding-left: 20px; font-size: 20px;"><span class="legend-dot completed"></span>Completed</div>
+                  <div style="font-size: 20px; padding-left: 20px;"><span class="legend-dot incomplete"></span>Incomplete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Total Earnings -->
+          <div class="col-md-4">
+            <div class="card shadow-sm p-4 d-flex flex-column justify-content-between" style="height: 360px;">
+              <div class="d-flex justify-content-between align-items-center mb-3" style="padding-bottom: 30px;">
+                <h4 class="fw-bold mb-0 text-dark">Total Earnings</h4>
+                <h6 class="text-muted">Day</h6>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="w-50" style="padding-left: 30px; padding-top: 0px; padding-bottom: 20px;">
+                  <canvas id="earningsChart"></canvas>
+                </div>
+
+
+                <div class="w-50 ps-3" style="margin-left: 30px; margin-bottom: 15px;">
+                  <div class="d-flex align-items-center mb-2 small" style="padding-left: 10px;">
+                    <span class="legend-dot earnings-profit me-2"></span><h4 class="fw-semibold text-dark" style="padding-left: 10px;">Profits</h4>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 small" style="padding-left: 10px;">
+                    <span class="legend-dot earnings-margin me-2"></span><h4 class="fw-semibold text-dark" style="padding-left: 10px;">Margins</h4>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 small" style="padding-left: 10px;">
+                    <span class="legend-dot earnings-others me-2"></span><h4 class="fw-semibold text-dark" style="padding-left: 10px;">Others</h4>
+                  </div>
+                  <div class="d-flex align-items-center small" style="padding-left: 10px;">
+                    <span class="legend-dot earnings-lost me-2"></span><h4 class="fw-semibold text-dark" style="padding-left: 10px;">Lost</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Profit & Lost -->
+          <div class="col-md-4">
+            <div class="card shadow-sm p-4 d-flex flex-column justify-content-between" style="height: 360px;">
+                <div class="d-flex justify-content-between align-items-center mb-2" style="padding-bottom: 10px;">
+                    <h4 class="fw-bold text-dark mb-0">Total Profit & Lost</h4>
+                    <h6 class="text-muted">Day</h6>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center mb-3 ps-1">
+                  <div class="text-success small fw-semibold">
+                    <span class="legend-dot profit-dot me-1"></span> $ 256.48
+                  </div>
+                  <div class="text-danger small fw-semibold">
+                    <span class="legend-dot loss-dot me-1"></span> $ 187.39
+                  </div>
+                </div>
+                
+                <!-- Chart -->
+                <div class="chart-area mt-2">
+                  <canvas id="profitLossChart" height="140px"></canvas>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>

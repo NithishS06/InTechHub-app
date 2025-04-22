@@ -1,0 +1,149 @@
+<section>
+    <!--Customer Order Details-->
+    <div class="dashboard-section container-fluid px-4 mt-4">
+      <div class="row gx-4 gy-4 mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-3" style="padding-top: 10px; padding-bottom: 10px;">
+        <h4 class="fw-bold text-dark mb-0" style="padding-left: 8px;">Customer Order Details</h4>
+        <div class="btn-group time-filters">
+          <button type="button" class="btn btn-light">Year</button>
+          <button type="button" class="btn btn-light">Month</button>
+          <button type="button" class="btn btn-light">Week</button>
+          <button type="button" class="btn btn-primary active">Day</button>
+        </div>
+      </div>
+
+      <div class="dashboard-section container-fluid">
+        <div class="order-table-wrapper card p-4 shadow-sm">
+          <div class="table-responsive">
+            <table class="table align-middle table-borderless table-hover custom-order-table">
+              <thead class="text-muted">
+                <tr>
+                  <th>ORDER NO <div class="th-action">
+                      <button class="dots-btn" data-column="0">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="0">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>CUSTOMER NAME <div class="th-action">
+                      <button class="dots-btn" data-column="1">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="1">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>ADDRESS<div class="th-action">
+                      <button class="dots-btn" data-column="2">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="2">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>DATE<div class="th-action">
+                      <button class="dots-btn" data-column="3">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="3">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>PAYMENT TYPE<div class="th-action">
+                      <button class="dots-btn" data-column="4">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="4">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>PAYMENT STATUS<div class="th-action">
+                      <button class="dots-btn" data-column="5">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="5">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                  <th>DELIVERY STATUS<div class="th-action">
+                      <button class="dots-btn" data-column="6">⋮</button>
+                      <div class="dropdown-menu-mini">
+                        <button class="dropdown-item sort" data-column="6">Sort</button>
+                        <button class="dropdown-item filter">Filter</button>
+                      </div>
+                    </div></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold">#243654</td>
+                  <td>Quiche Hollandaise</td>
+                  <td>4693 White Oak Drive Kansas City, MO</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Paytm</td>
+                  <td><span class="status-badge success">Paid</span></td>
+                  <td><span class="status-badge in done">Done</span></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td class="fw-semibold">#253461</td>
+                  <td>Ingredia Nutrisha</td>
+                  <td>2298 Jessie Street Columbus, OH</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Google Pay</td>
+                  <td><span class="status-badge success">Paid</span></td>
+                  <td><span class="status-badge in done">Done</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">#261247</td>
+                  <td>Valentino Morose</td>
+                  <td>3327 Taylor Street New York, NY</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Phonepe</td>
+                  <td><span class="status-badge processing">Processing</span></td>
+                  <td><span class="status-badge in processing">Processing</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">#263942</td>
+                  <td>Abraham Pigeon</td>
+                  <td>1065 Willis Avenue Daytona Beach, FL</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Cash On Delivery</td>
+                  <td><span class="status-badge failed">Failed</span></td>
+                  <td><span class="status-badge in failed">Failed</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">#264142</td>
+                  <td>Raymond B. Pacheco</td>
+                  <td>1457 Ferguson Street Worcester, MA</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Google Pay</td>
+                  <td><span class="status-badge success">Paid</span></td>
+                  <td><span class="status-badge in success">Paid</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">#265242</td>
+                  <td>Duane B. Sutherland</td>
+                  <td>916 Oak Drive St Johnsville, NY</td>
+                  <td style="color: rgba(151, 144, 144, 0.781);">20 Nov 2021</td>
+                  <td>Paytm</td>
+                  <td><span class="status-badge processing">Processing</span></td>
+                  <td><span class="status-badge in processing">Processing</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      
+        <div class="d-flex justify-content-between align-items-center mt-3 px-1 text-muted">
+          <div>Showing 1 to 10 of 100 entries</div>
+          <ul class="pagination pagination-sm mb-0 custom-pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

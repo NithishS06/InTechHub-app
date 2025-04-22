@@ -1,0 +1,463 @@
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0px; /* height of the fixed header */
+  left: 0;
+  width: 350px; /* or your actual sidebar width */
+  height: calc(100vh); /* full height minus header */
+  overflow-y: auto;
+  background-color: #131b33; /* your sidebar bg */
+  color: white;
+  z-index: 1000; /* stay on top of content but below header */
+  padding: 30px 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.sidebar-header .logo {
+  width: 300px;
+  height: 80px;
+} 
+
+/* Nav Items */
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+.sidebar-nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+  font-weight:normal;
+  color: rgb(194, 194, 194);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar-nav ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+}
+.sidebar-nav ul li:hover {
+  background-color: #1d294d;
+}
+.sidebar-nav ul li.active {
+  background-color: #ff5e0050;
+  color:  #ff5e00;
+}
+
+
+/* Main content placeholder */
+.main-content {
+  flex: 1;
+  background-color: #fffefe;
+  padding-top:70px;
+  margin-left: 350px; /* match sidebar width */
+  overflow-y: auto;
+}
+
+
+/* Header */
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 350px; /* equal to sidebar width */
+  right: 0;
+  height: 80px;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-header h4{
+  font-size: 30px;
+  font-weight:bolder;
+  padding-left: 5px;
+}
+
+.icon-btn img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.icon-btn img:hover {
+  opacity: 0.8;
+}
+
+.user-profile {
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #333;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+
+/* Overview Cards */
+
+.overview-section h5 {
+  padding-top: 70px;
+  padding-left: 10px;
+  font-size: 22px;
+  font-weight: 900;
+  
+}
+
+.overview-card {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  min-height: 180px;
+}
+
+.overview-card:hover {
+  transform: translateY(-3px);
+}
+
+.overview-chart {
+  height: 60px;
+}
+
+.chart-wrapper {
+  margin-top: 10px;
+}
+
+/* Customer Visit on Site section */
+
+.map-card {
+  border-radius: 14px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.map-card:hover{
+  transform: translateY(-3px);
+}
+
+/* Income Received section */
+
+.income-panel:hover{
+  transform: translateY(-3px);
+}
+
+.income-panel {
+  border-radius: 14px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.income-item{
+  padding-bottom: 10.5px;
+  width: 100%;
+}
+.payment-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.income-item span {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 8px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.income-item strong {
+  font-size: 20px;
+  color: #333;
+}
+
+.map-card {
+  height: 560px;
+  position: relative;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #1d3557;
+}
+
+/* India Map Stats Table  */
+
+.time-filters .btn {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 4px 30px;
+  border-radius: 6px;
+  margin-left: 6px;
+  background-color: #ffffff;
+  color: #bbb;
+  border: none;
+}
+
+.time-filters .btn.active {
+  background-color: #fff;
+  color: #000000;
+}
+
+.table-summary {
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 320px;
+}
+
+.table-summary table th,
+.table-summary table td {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+
+
+/* Total Targets related Bars*/
+
+.card {
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-3px);
+}
+
+.circular-chart {
+  display: block;
+  margin: auto;
+  max-width: 120%;
+  max-height: 150px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #ececec;
+  stroke-width: 1.5;
+}
+
+.circle {
+  fill: none;
+  stroke: #00c896;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.percentage {
+  fill: #1a1a1a;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.legend-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Total Earnings related Bar*/
+.profit-dot {
+  background-color: #00c896;
+}
+
+.loss-dot {
+  background-color: #ff5252;
+}
+
+.completed { background-color: #068b6a; }
+.incomplete { background-color: #ccc; }
+
+.earnings-profit { background-color: #f4ae01; }
+.earnings-margin { background-color: #3c80e8; }
+.earnings-others { background-color: #00c896; }
+.earnings-lost   { background-color: #ff5252; }
+
+
+@keyframes progress {
+  0% { stroke-dasharray: 0, 100; }
+}
+
+/* Customer Orders Table progress */
+
+.order-table-wrapper .custom-order-table th {
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.1rem;
+  color: rgba(151, 144, 144, 0.781);
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+.order-table-wrapper .custom-order-table td {
+  font-size: 19px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:bold;
+  color: #242424;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.custom-order-table tbody tr:hover {
+  background-color: #f9fbff;
+}
+
+.highlight-row {
+  background: #f8fbff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.custom-select {
+  min-width: 130px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.status-badge {
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  width: 65%;
+}
+
+.status-badge.success {
+  background-color: #00b386c7;
+  color: #ffffff;
+}
+
+.status-badge.in.success {
+  background-color: #00c8961a;
+  color: #00c896;
+}
+
+.status-badge.failed {
+  background-color: #c40000d3;
+  color: #ffffff;
+}
+
+.status-badge.in.failed {
+  background-color: #ff52521a;
+  color: #ff5252;
+}
+
+.status-badge.processing {
+  background-color: #eea300de;
+  color: #ffffff;
+}
+
+.status-badge.in.processing {
+  background-color: #f8b31b1a;
+  color: #f8b31b;
+}
+
+.status-badge.done {
+  background-color: #00c8961a;
+  color: #00c896;
+}
+
+.custom-pagination li{
+  padding-left: 30px;
+}
+.custom-pagination .page-link {
+  border: none;
+  margin: 0 3px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  color: #555;
+  padding: 4px 10px;
+  width: 100%;
+}
+
+.custom-pagination .active .page-link {
+  background-color: #ff5e00;
+  color: #fff;
+}
+
+.th-action {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.dots-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.dropdown-menu-mini {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 999;
+  min-width: 100px;
+  border-radius: 6px;
+}
+
+.dropdown-menu-mini .dropdown-item {
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu-mini .dropdown-item:hover {
+  background-color: #f8f8f8;
+}

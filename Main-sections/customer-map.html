@@ -1,0 +1,111 @@
+<section>
+    <div class="dashboard-section container-fluid px-4 mt-4">
+        <div class="row gx-4">
+          
+           <!-- Map Section -->
+           <div class="col-lg-9">
+            <div class="card p-3 position-relative map-card">
+              <div class="d-flex justify-content-between align-items-start mb-2" style="padding-top: 10px; padding-left: 10px;">
+                <h4 class="section-title">Customer visit on site</h4>
+                <div class="btn-group time-filters" role="group">
+                  <button type="button" class="btn btn-light">Year</button>
+                  <button type="button" class="btn btn-light">Month</button>
+                  <button type="button" class="btn btn-light">Week</button>
+                  <button type="button" class="btn btn-primary active">Day</button>
+                </div>
+              </div>
+        
+              <div id="indiaMap" style="width: 100%; height: 500px;"></div>
+        
+              <div class="table-summary position-absolute">
+                <table class="table table-sm mb-0 text-center">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Total Visit</th>
+                      <th>Ordered</th>
+                      <th>Pending</th>
+                      <th>Delivered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>7,88,623</td>
+                      <td>5,41,738</td>
+                      <td>2,37,622</td>
+                      <td>3,04,116</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Income Received By -->
+          <div class="col-lg-3">
+            <div class="card p-4 shadow-sm income-panel" style="background-color: rgba(220, 249, 253, 0.137);">
+              <h4 class="fw-bold mb-4">Income Received By</h4>
+              <div class="income-list">
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/icons/google-pay.svg" class="payment-icon" alt="Google Pay">
+                    <span>Google Pay</span>
+                  </div>
+                  <strong>$721,345</strong>
+                </div>
+      
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/icons/phone-pe.svg" class="payment-icon" alt="PhonePe">
+                    <span>Phonepe</span>
+                  </div>
+                  <strong>$23,482</strong>
+                </div>
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="assets/icons/amazon-pay.svg" class="payment-icon" alt="PhonePe">
+                      <span>Amazon</span>
+                    </div>
+                    <strong>$382</strong>
+                </div>
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="assets/icons/upi.svg" class="payment-icon" alt="PhonePe">
+                      <span>UPI</span>
+                    </div>
+                    <strong>$43,820</strong>
+                </div>
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="assets/icons/bank-transfer.svg" class="payment-icon" alt="PhonePe">
+                      <span>Bank Transfer</span>
+                    </div>
+                    <strong>$53,847</strong>
+                </div>
+
+                <div class="income-item d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="assets/icons/cash-on-delivery.svg" class="payment-icon" alt="PhonePe">
+                      <span>Cash on Delivery</span>
+                    </div>
+                    <strong>$72,920</strong>
+                </div>
+
+                <div class="income-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="assets/icons/paytm.svg" class="payment-icon" alt="PhonePe">
+                      <span>Paytm</span>
+                    </div>
+                    <strong>$824</strong>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
